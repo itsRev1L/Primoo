@@ -506,3 +506,80 @@ a {
 .faq-item.active .faq-icon {
   transform: rotate(45deg);
 }
+.footer {
+  font-family: "Vazirmatn", sans-serif;
+  background-color: #fff;
+  color: #222;
+}
+
+.footer-main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.footer-logo img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.footer-logo img:hover {
+  transform: scale(1.1);
+}
+
+.footer-nav {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  color: #3571e9;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #2854c4;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+  font-size: 22px;
+  color: #3571e9;
+}
+
+.footer-socials a:hover {
+  color: #2854c4;
+}
+
+.footer-mini {
+  border-top: 1px solid #e0e0e0;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  background-color: #fafafa;
+  user-select: none;
+  direction: rtl;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+}
